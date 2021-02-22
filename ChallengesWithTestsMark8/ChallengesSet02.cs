@@ -76,19 +76,26 @@ namespace ChallengesWithTestsMark8
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            throw new NotImplementedException();
+            return str1.length < str2.length ? str1.length : str2.length;
         }
 
         public int Sum(int[] numbers)
         {
-            throw new NotImplementedException();
+            if(numbers == null)
+            {
+                return 0;
+            }
+            var sum = 0;
+            for (int i =0; i < numbers.Length; i++)
+            {
+                sum += numbers[i];
+            }
         }
 
         public int SumEvens(int[] numbers)
         {
             throw new NotImplementedException();
         }
-
         public bool IsSumOdd(List<int> numbers)
         {
             throw new NotImplementedException();
@@ -96,7 +103,14 @@ namespace ChallengesWithTestsMark8
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            throw new NotImplementedException();
+            if (number <= object)
+            {
+                return 0;
+            }
+            else
+            {
+                return number / 2;
+            }
         }
     }
 }
